@@ -13,7 +13,6 @@ public class Account implements AccountManagement {
         this.username = username;
         this.password = hash(password);
         accountID = UUID.randomUUID();
-        signedUp = true;
         this.role = role;
     }
 
@@ -74,8 +73,8 @@ public class Account implements AccountManagement {
         return signedUp;
     }
 
-    public void signOut() {
-        signedUp = false;
+    public void setSigningUpStatus(signedUp) {
+        this.signedUp = signedUp;
     }
 
     @Override
