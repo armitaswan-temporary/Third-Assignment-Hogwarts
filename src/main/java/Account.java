@@ -73,7 +73,7 @@ public class Account implements AccountManagement {
         return signedUp;
     }
 
-    public void setSigningUpStatus(signedUp) {
+    public void setSigningUpStatus(boolean signedUp) {
         this.signedUp = signedUp;
     }
 
